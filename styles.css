@@ -1,0 +1,429 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181c24;
+    color: #f4f4f4;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+
+header {
+    background: linear-gradient(90deg, #2d3142 60%, #4f5d75 100%);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0004;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #f9dc5c;
+    margin-bottom: 8px;
+    text-shadow: 1px 2px 8px #0008;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 12px;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #f9dc5c;
+}
+
+main {
+   line-height: 1.8;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+.hero-banner {
+    background: url('assets/parqueserradacapivara.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    text-shadow: 1px 2px 8px #0008;
+}
+
+.hero-banner p {
+    text-shadow: 1px 2px 8px #0008;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+
+.hero-banner div {
+    display: flex;
+}
+
+.about {
+    background-color: #1f2937;
+}
+
+.text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.text h2 {
+    color: #f9dc5c;
+    margin-bottom: 18px;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.about .text span {
+    font-weight: bold;
+}
+
+.about .text span.red {
+    color: red;
+}
+
+.about .text span.yellow {
+    color: #f9dc5c;
+}
+
+
+.about-fases {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.about-fases .about-fase {
+    flex: 1 1 300px;
+    background-color: #374151;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0003;
+    padding: 20px 18px;
+    width: 400px;
+    text-align: center;
+}
+
+.about-fases ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+i {
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto 8px auto;
+}
+
+i.bi-puzzle-fill {
+    color: #60a5fa;
+}
+
+i.bi-lightbulb {
+    color: #f9dc5c;
+}
+
+i.bi-check-circle {
+    color: #46c077;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+}
+
+.arquitetos {
+    text-align: center;
+}
+
+.arquitetos .arquitetos-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.arquitetos .arquitetos-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  
+    padding: 20px 18px;
+    width: 170px;
+    text-align: center;
+}
+
+
+.arquitetos-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.arquitetos-card h5 {
+    color: #f9dc5c;
+}
+
+.seduckathon {
+    /* background: linear-gradient(135deg, #0d4c99, #fcb900, #e63114, #009739); */
+    background: linear-gradient(135deg, #101435, #764df0);
+}
+
+.seduckathon .seduckathon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.seduckathon-cards .seduckathon-card {
+    background: #413090;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0003;
+    padding: 20px 18px;
+    width: 300px;
+    text-align: center;
+}
+
+.bi-question-circle {
+    color: #f9dc5c;
+}
+
+.bi-trophy {
+    color: #4ade80;
+}
+
+.bi-laptop {
+    color: #789ce6;
+}
+
+.bi-mortarboard {
+    color: #c985f4;
+}
+
+.bi-rocket-takeoff {
+    color: #eb3232    
+}
+
+.bi-ladder {
+    color: #26d4b7;
+}
+
+.game .game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.game-cards .game-card {
+    flex: 1 1 300px;;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* Botões */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 12px 8px 0 8px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-primary {
+    background: #f9dc5c;
+    color: #23283a;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ffe066;
+    color: #181c24;
+}
+
+.btn-secondary {
+    background: #4f5d75;
+    color: #f4f4f4;
+    border: 2px solid #f9dc5c;
+}
+
+.btn-secondary:hover {
+    background: #23283a;
+    color: #f9dc5c;
+}
+
+
+footer {
+    background: #23283a;
+    color: #bfc0c0;
+    text-align: center;
+    padding: 24px 0 12px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #f9dc5c;
+    font-size: 2rem;
+    margin: 0 14px;
+    transition: color 0.2s;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffe066;
+}
+
+.footer-phrase {
+    display: block;
+    margin-top: 8px;
+    color: #f9dc5c;
+    font-size: 1.08rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+
+/* Menu responsivo: empilha os itens em telas pequenas */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 8px;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+        display: flex !important;
+        align-items: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    nav ul li a {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 18px 4vw;
+    }
+    .hero-banner {
+        height: auto;
+        padding: 32px 0;
+    }
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+    .about-fases .about-fase {
+        padding: 16px 8px;
+    }
+    .arquitetos .arquitetos-card {
+        padding: 16px 8px;
+    }
+    .seduckathon-cards .seduckathon-card {
+        padding: 16px 8px;
+    }
+    .footer-social a {
+        font-size: 1.5rem;
+        margin: 0 8px;
+    }
+    .footer-phrase {
+        font-size: 0.98rem;
+    }
+}
+
+@media (max-width: 300px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        font-size: 1rem;
+    }
+    .hero-banner h1 {
+        font-size: 1.2rem;
+    }
+    .about-fases .about-fase,
+    .arquitetos .arquitetos-card,
+    .seduckathon-cards .seduckathon-card,
+    .game-cards .game-card {
+        width: 98vw;
+        max-width: 98vw;
+        min-width: unset;
+    }
+    section {
+        padding: 10px 2vw;
+    }
+}
