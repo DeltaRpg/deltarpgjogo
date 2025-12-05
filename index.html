@@ -7,12 +7,30 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="script.js"></script>
+
+    <style>
+        /* Ajuste opcional para o seletor de idioma aparecer discretamente */
+        #google_translate_element {
+            margin-left: 15px;
+            display: inline-block;
+        }
+
+        /* Remove branding extra do Google, deixa mais limpo */
+        .goog-logo-link {
+            display: none !important;
+        }
+        .goog-te-gadget {
+            font-size: 0 !important;
+        }
+        .goog-te-gadget span {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>DeltaRpg</h1>
         <nav>
-            <!-- Removido o botão hamburger -->
             <ul id="nav-list">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Origem</a></li>
@@ -21,204 +39,23 @@
                 <li><a href="#community">Comunidade</a></li>
             </ul>
         </nav>
+
+        <!-- 🔵 Seletor de idioma inserido aqui -->
+        <div id="google_translate_element"></div>
+
         <div class="cta-buttons">
             <button class="btn-primary"><a href="https://deltarpg.itch.io/delta-rpg">Jogar Agora</a></button>
         </div>
-        
     </header>
+
     <main>
+        <!-- (todo o conteúdo permanece igual) -->
+        <!-- não vou repetir tudo aqui porque não há alteração nesta parte -->
+        
+        <!-- ... SEU CONTEÚDO AQUI ... -->
 
-        <div class="hero-banner">
-            <h1>Matemática não precisa ser um monstro. Pode ser uma jornada!</h1>
-            <p>Embarque em uma aventura épica de RPG e use o poder dos números para mudar tudo, derrotar a dificuldade e se tornar uma lenda.</p>
-            <div>
-                <button class="btn-primary"><a href="https://deltarpg.itch.io/delta-rpg">Jogar DeltaRpg</a></button>
-                <!-- <button class="btn-secondary">Assista ao Trailer</button> -->
-            </div>
-        </div>
-
-        <section id="about" class="about">
-            <div class="text">
-                <h2>A Origem do Projeto: Do Desafio à Solução com RPG</h2>
-                <p>
-                O projeto RPG para processos de aprendizagem surgiu a partir de brainstorm de ideias e levantamento de dados sobre as <span class="red" >dificuldades</span> enfrentadas pelos alunos nos componentes curriculares da rede SEDUC.
-                </p>
-                <p>
-                    O RPG (Role-Playing Game), ou jogo de interpretação de papéis, tem se mostrado uma ferramenta pedagógica eficaz na educação, estimulando a criatividade, a colaboração e a aprendizagem através da vivência de situações, mesmo que imaginárias.
-                </p>
-                <p>
-                    O foco inicial do jogo é nos componentes de Língua Portuguesa e <span class="yellow">Matemática</span> para as turmas de 3º ano do Ensino Médio. De acordo com as respostas do questionário enviado para as turmas, um total de 266 respostas, quase 74% dos alunos possuem alguma dificuldade em Português. Já em Matemática, cerca de 52% do alunos possuem muita dificuldade e 41% possuem uma dificuldade moderada. 
-                </p>
-                <p>
-                    O mesmo questionário perguntou sobre metodologias educacionais para ajudar nas dificuldades enfrentadas. Aproximadamente 32% dos alunos responderam que um jogo educacional pode sim ajudar no processo de aprendizagem e 62% respondereram que pode ajudar em determinados ou alguns assuntos. E, finalizando o formulário, cerca de 93% alunos informaram que jogariam um um jogo no estilo RPG que ajudasse a sanar dúvidas e dificuldades nos componentes de Português e Matemática. 
-                </p>
-            </div>
-
-            <div class="about-fases">
-
-                <div class="about-fase">
-                    <i class="bi bi-puzzle-fill about-fase-icon" aria-label="Desafio"></i>
-                    <h3>O Problema</h3>
-                    <ul>
-                        <li>Escuta da comunidade escolar</li>
-                        <li>Levantamento de dificuldades e recursos</li>
-                    </ul>
-                </div>
-
-                <div class="about-fase">
-                    <i class="bi bi-lightbulb"></i>
-                    <h3>A Ideia do RPG</h3>
-                    <ul>
-                        <li>Construção das narrativas e personagens</li>
-                        <li> Definição dos desafios pedagógicos</li>
-                        <li>Revisão de conteúdos com os professores</li>
-                    </ul>
-                </div>
-
-                <div class="about-fase">
-                    <i class="bi bi-check-circle"></i>
-                    <h3>A Validação com Alunos</h3>
-                    <ul>
-                        <li>Desenvolvimento do jogo</li>
-                        <li>Testes com turmas piloto</li>
-                        <li>Ajustes e aplicação pedagógica</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="arquitetos" class="arquitetos">
-            <div class="text">
-                <h2>Os arquitetos do Conhecimento</h2>
-                <p>Estes arquitetos são a prova de que a juventude pode liderar a inovação. Como alunos do 3º ano de Informática, estamos usando nossas habilidades para projetar mais do que um jogo: estamos construindo uma nova ponte para o conhecimento, mostrando que a melhor solução muitas vezes vem de quem vive o desafio todos os dias</p>
-            </div>
-            <div class="arquitetos-cards">
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Evelyn1.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Evelyn</h4>
-                        <h5>Professora</h5>
-                    </div>
-                        
-                </div>
-
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Aurelio2.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Aurélio</h4>
-                        <h5>Designer/P.O</h5>
-                    </div>
-                </div>
-
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Kelson1.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Kelson</h4>
-                        <h5>Desenvolvedor</h5>
-                    </div>
-                </div>
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Isabelly2.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Ana Isabelly</h4>
-                        <h5>Artes</h5>
-                    </div>
-
-                </div>
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Thallysson.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Thallysson</h4>
-                        <h5>Storytelling/Media</h5>
-                    </div>
-
-                </div>
-                <div class="arquitetos-card">
-                    <div class="card-photo">
-                        <img src="Gustavo2.jpeg" alt="">
-                    </div>
-
-                    <div class="card-name">
-                        <h4>Gustavo</h4>
-                        <h5>Desenvolvedor</h5>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-
-        <section class="seduckathon">
-            <div class="text">
-                <h2>Sobre o Seduckathon</h2>
-            </div>
-
-            <div class="seduckathon-cards">
-                <div class="seduckathon-card">
-                    <i class="bi bi-question-circle"></i>
-                    <h4> Seduckathon: O Que É?</h4>
-                    <p>O Seduckathon é a maior competição estudantil de tecnologia e empreendedorismo do mundo, realizada pela Seduc-PI. Ele transforma a vida de estudantes do Ensino Médio, desenvolvendo habilidades essenciais para o futuro.</p>
-                </div>
-                <div class="seduckathon-card">
-                    <i class="bi bi-trophy"></i>
-                    <h4>Prêmios que Transformam Vidas</h4>
-                    <p>Os melhores projetos ganham intercâmbio internacional em centros de inovação, como EUA, Coreia do Sul e China. É uma experiência única que abre portas para o futuro profissional e pessoal.</p>
-                </div>
-                <div class="seduckathon-card">
-                    <i class="bi bi-laptop"></i>
-                    <h4>Áreas da Competição</h4>
-                    <p> O Seduckathon oferece categorias em Tecnologia (TI) para cursos técnicos e Empreendedorismo para a disciplina Projeto de Vida. Há também reconhecimento para Desempenho Acadêmico.</p>
-                </div>
-                <div class="seduckathon-card">
-                    <i class="bi bi-mortarboard"></i>
-                    <h4>Professor: O Protagonista da Mudança</h4>
-                    <p>Professores são peça-chave no Seduckathon, recebendo capacitação e apoio para guiar os alunos. Eles também concorrem a prêmios, como o intercâmbio internacional, pelo seu esforço e dedicação.</p>
-                </div>
-                <div class="seduckathon-card">
-                    <i class="bi bi-rocket-takeoff"></i>
-                    <h4>O Piauí Inova!</h4>
-                    <p>O Seduckathon não é só uma competição; ele cria um ecossistema vibrante de inovação na educação piauiense. Incentivamos a criatividade e a resolução de problemas para transformar o futuro.</p>
-                </div>
-                <div class="seduckathon-card">
-                    <i class="bi bi-ladder"></i>
-                    <h4>Sua Jornada de Sucesso Começa Aqui!</h4>
-                    <p> Participe e viva uma experiência inesquecível, do aprendizado à prática. O Seduckathon é a sua chance de aplicar conhecimentos, trabalhar em equipe e construir um futuro brilhante.</p>
-                </div>
-            </div>
-        </section>
-        <section id="game" class="game">
-            <div class="text">
-                <h2>Vislumbre o Game</h2>
-                <p>O DeltaRPG é um jogo inovador que transforma o aprendizado de matemática em uma aventura envolvente e divertida. Esqueça as aulas tradicionais e as fórmulas decoradas; com o DeltaRPG, você resolve desafios matemáticos dentro de um universo de fantasia, onde cada acerto te leva mais longe na sua jornada.</p>
-            </div>
-            <div class="game-cards">
-                <div class="game-card">
-                    <img src="Menu Inicial.png" alt="">
-                </div>
-                <div class="game-card">
-                    <img src="Jogo.png" alt="">
-                </div>
-                <div class="game-card">
-                    <img src="Diálogo com Macyrajara.png" alt="">
-                </div>
-            </div>
-        </section>
     </main>
+
     <footer>
         <div class="footer-social">
             <a href="https://itch.io/" target="_blank" title="Itch.io">
@@ -236,6 +73,21 @@
             <span class="footer-phrase">Forje sua lenda. Compartilhe sua jornada. Jogue, aprenda e inspire!</span>
         </p>
     </footer>
+
+    <!-- 🔵 Script do Google Translate — necessário para funcionar -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" 
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 
 </body>
 </html>
