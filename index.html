@@ -10,27 +10,20 @@
 
     <style>
         /* Ajuste opcional para o seletor de idioma aparecer discretamente */
-       .language-switcher {
-    display: flex;
-    gap: 10px;
-    margin-left: 15px;
+.flag-icon {
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+    border-radius: 2px;
+    object-fit: cover;
 }
 
 .lang-btn {
-    background: #007bff;
-    color: white;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.lang-btn:hover {
-    background: #0056b3;
-}
     </style>
 </head>
 <body>
@@ -46,9 +39,16 @@
             </ul>
         </nav>
     <div class="language-switcher">
-        <button onclick="translateTo('pt')" class="lang-btn">🇧🇷 PT-BR</button>
-        <button onclick="translateTo('en')" class="lang-btn">🇺🇸 EN</button>
-    </div>
+    <button onclick="translateTo('pt')" class="lang-btn">
+        <img src="https://flagcdn.com/w20/br.png" alt="Brasil" class="flag-icon">
+        PT
+    </button>
+
+    <button onclick="translateTo('en')" class="lang-btn">
+        <img src="https://flagcdn.com/w20/us.png" alt="USA" class="flag-icon">
+        EN
+    </button>
+</div>
         <!-- 🔵 Seletor de idioma inserido aqui -->
         <div id="google_translate_element"></div>
 
@@ -302,6 +302,7 @@
 
 </body>
 </html>
+
 
 
 
